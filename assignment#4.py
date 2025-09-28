@@ -42,3 +42,12 @@ class Museum:
         print(f"Total weight of chosen items: {total_weight} (capacity = {c_max})")
         print(f"Total value of chosen items: {total_value}")
         print(f"Chosen items: {chosen_items}")
+
+
+# MAIN EXECUTION BLOCK
+if __name__ == "__main__":
+    value = [None, 10, 5, 16, 11]
+    weight = [None, 3, 2, 4, 4]
+    c_max = 10
+    small_museum = Museum(value, weight, c_max)
+    small_museum.solve()
